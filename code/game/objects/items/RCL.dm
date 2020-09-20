@@ -4,22 +4,22 @@
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "rcl-0"
 	inhand_icon_state = "rcl-0"
-	var/obj/structure/pipe_cleaner/last
-	var/obj/item/stack/pipe_cleaner_coil/loaded
 	opacity = FALSE
 	force = 5 //Plastic is soft
 	throwforce =5
 	throw_speed = 1
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
+	actions_types = list(/datum/action/item_action/rcl_col,/datum/action/item_action/rcl_gui,)
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	var/obj/structure/pipe_cleaner/last
+	var/obj/item/stack/pipe_cleaner_coil/loaded
 	var/max_amount = 90
 	var/active = FALSE
-	actions_types = list(/datum/action/item_action/rcl_col,/datum/action/item_action/rcl_gui,)
 	var/list/colors = list("red", "yellow", "green", "blue", "pink", "orange", "cyan", "white")
 	var/current_color_index = 1
 	var/ghetto = FALSE
-	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
 	var/datum/radial_menu/persistent/wiring_gui_menu
 	var/mob/listeningTo
 

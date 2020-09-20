@@ -208,6 +208,8 @@ RLD
 	worn_icon_state = "RCD"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	pickup_sound = "sounds/effects/rcd_pickup.ogg"
+	drop_sound = "sounds/effects/rcd_drop.ogg"
 	custom_premium_price = 1700
 	max_matter = 160
 	slot_flags = ITEM_SLOT_BELT
